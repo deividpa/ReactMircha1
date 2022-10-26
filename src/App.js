@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 // Componentes propios
@@ -10,7 +9,10 @@ import Estado from "./components/Estado";
 import Estado2 from "./components/Estado2";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
-import Eventos from "./components/Eventos";
+import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
+import Padre from "./components/ComunicacionComponentes";
+import CicloVida from "./components/CicloVida";
+import AjaxAPI from "./components/AjaxAPI";
 
 function App() {
   const estaciones = ["verano", "otoño", "primavera", "invierno"];
@@ -36,7 +38,17 @@ function App() {
       </section>
       <RenderizadoCondicional />
       <RenderizadoElementos />
-      <Eventos />
+      <EventosES6 />
+      <hr />
+      <EventosES7 />
+      <hr />
+      <MasSobreEventos />
+      <hr />
+      <Padre />
+      <hr />
+      <CicloVida />
+      <hr />
+      <AjaxAPI />
       <HtmlFooter msg="Todos los derechos reservados 2022 / 2024"></HtmlFooter>
     </div>
   );
